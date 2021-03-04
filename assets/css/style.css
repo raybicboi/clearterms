@@ -150,8 +150,20 @@ a:hover {
   white-space: nowrap;
   float: left;
   margin-left: 20px;
+  margin-top: 2px;
 }
 
+.input-group {
+  margin-top: 10px;
+}
+
+.mr-auto {
+  margin-left: 0px;
+}
+
+.nav-menu {
+  margin-right: 0px;
+}
 
 .nav-menu ul {
   border-radius: 6px;
@@ -308,8 +320,8 @@ a:hover {
 .company-img img {
   margin-left: 2%;
   margin-bottom: 3%;
-  border: 2px black solid; /* Raymond & Wenshan addition to original code */
 }
+
 
 @media (max-width: 991px) {
   #hero {
@@ -494,8 +506,7 @@ section {
 --------------------------------------------------------------*/
 .slick-item img {
   /* opacity: 50%; */
-  /* max-width: 80%; */
-  width: 70%;
+  max-width: 80%;
   border: 2px black solid; /* Raymond & Wenshan addition to original code */
 }
 
@@ -714,106 +725,138 @@ section {
 # Individual Company Page (Wen Shan's Code)
 --------------------------------------------------------------*/
 #individual-company {
-  background-color: #E8FFFD;
-}
-#company-logo {
+  /* background-color: #E8FFFD; */
+  background-color: #F5F5F5
+ }
+  
+ #company-logo {
   float: left;
-  margin-top: 4%;
-  margin-left: 5%;
-}
-#company-desc {
+  margin-top: 1.5%;
+ }
+  
+ #company-desc {
   float: left;
-  margin-top: 4%;
-  margin-left: 5%;
-  width: 47%;
+  margin-top: 3%;
+  margin-left: 1.5%;
+  width: 41.5%;
   padding-top: 1%;
   padding-left: 2%;
-}
-#company-desc h5, #company-desc p, #company-desc h1, #participate h1{
-  color: #223C5D;
-}
+ }
   
-#individual-company h1{
+ #company-desc h5, #company-desc p, #company-desc h1, #participate h1{
+  color: #223C5D;
+ }
+  
+  
+ #individual-company h1{
   text-transform: uppercase;
   font-size: 28px;
   padding-top: 0px;
   margin-bottom: 0px;
-}
-#term-background {
-  background: #abe5e0;
-  margin-left: 5%;
+ }
+  
+ #term-background {
+  /* background: #abe5e0; */
+  background: white;
   padding: 2%;
   width: 60%;
+  margin-top: -3%;
   float: left;
-}
-#term-container {
+ }
+  
+ #term-container {
   overflow: auto;
+ }
+  
+#term-details th {
+  text-transform: uppercase;
+  width: 30%;
+  color: #009184;
+  padding: 30px 15px 30px 25px;
+  font-size: 16px;
+  vertical-align: top;
 }
-  #term-details th {
-    text-transform: uppercase;
-    padding: 50px 10px;
-    width: 30%;
-    color: #009184;
-    font-size: 18px;
-  }
-  #term-details td {
-    padding: 30px 15px 30px 25px;
-    width: 70%;
-    color: #223C5D;
-    font-size: 16px;
-  }
+  
+#term-details td {
+  padding: 30px 15px 30px 25px;
+  width: 70%;
+  color: #223C5D;
+  font-size: 16px;
+  vertical-align: top;
+}
+  
+#participate {
+  width: 35%;
+  margin-top: -3%;
+  margin-left: 5%;
+  float: right;
+  padding: 2%;
+  color: #009184;
+  font-size: 16px;
+  background: white;;
+}
+  
+#participate h2 {
+  color: #009184;
+  font-size: 18px;
+}
+
+#participate h1 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+  
+#participate .btn-get-started {
+  width: 280px;
+  text-align: center;
+  font-size: 14px;
+}
+  
+  
+#view-in-context {
+  width: 60%;
+}
+  
+#term-content {
+  padding: 60px;
+  padding-top: 4%;
+  color: #E5E5E5;
+  line-height: 1.6em;
+  background: #FFFFFF;
+}
+  
+#term-content .emphasis {
+  color: #009184;
+  font-weight: bold;
+}
+
+#important-terms {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
   #participate {
-    width: 27%;
-    float: right;
-    margin-left: 1%;
-    margin-right: 5%;
+    width: 35%;
+    margin-left: 5%;
     padding: 2%;
     color: #009184;
     font-size: 16px;
     background: white;;
   }
-  #participate h2 {
-    color: #009184;
-    font-size: 18px;
-  }
-  
-  #participate h1 {
-    margin-bottom: 70px;
-    text-align: center;
-  }
-  #participate .btn-get-started {
-    width: 280px;
-    text-align: center;
-    font-size: 14px;
-  }
-  
-  #view-in-context {
+  #term-background {
+    background: #abe5e0;
+    padding: 2%;
     width: 60%;
-    margin-left: 5%;
-  }
-  #term-content {
-  padding: 60px;
-  color: #E5E5E5;
-  line-height: 1.6em;
-  background: #FFFFFF;
-  }
-  #term-content .emphasis {
-  color: #009184;
-  font-weight: bold;
- }
-  
-#important-terms {
-  display: flex;
-  justify-content: space-evenly;
+   }
 }
- 
  
 
 /*--------------------------------------------------------------
 # Crowdsourcing (Wen Shan & Raymond's Code)
 --------------------------------------------------------------*/
 /* .crowd {
-padding: 30px 0;
+ padding: 30px 0;
 } */
 .survey {
   display: none;
@@ -824,16 +867,16 @@ padding: 30px 0;
   /* border-color: #223C5D; */
   /* transition: ease-in-out 0.3s; */
 }
-  
+
 #crowd-inner .row {
   display: flex;
   justify-content: space-evenly;
 }
-  
+
 #crowd-inner p {
   font-size: 18px;
 }
-  
+
 .statement {
   margin: 2%;
   flex-basis: 40%;
@@ -843,12 +886,12 @@ padding: 30px 0;
   overflow: auto;
   border: 2px #009184 solid;
   background-color: white;
-}
-  
+ }
+
 .left {
   margin-right: -5%;
 }
-  
+
 .statement-equal {
   border-radius: 30px;
   padding: 50px 30px;
@@ -859,14 +902,15 @@ padding: 30px 0;
   margin-top: 1%;
   border: 2px #009184 solid;
   background-color: white;
-}
-  
-p.statement-description {
+ }
+
+ p.statement-description {
   color: #009184;
   font-size: 16px !important;
-}
+ }
+
   
-#crowd-inner .btn-submit {
+ #crowd-inner .btn-submit {
   color: #fff;
   border-radius: 10px;
   font-size: 18px;
@@ -877,29 +921,32 @@ p.statement-description {
   background: #223C5D;
   margin-top: 5%;
   display: none;
-}
-#crowd-inner .btn-submit:hover {
+ }
+  
+ #crowd-inner .btn-submit:hover {
   background: transparent;
   color: #223C5D;
   border: 2px solid #223C5D;
   text-decoration: none;
-}
-.statement-title {
+ }
+  
+ .statement-title {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 10%;
   font-weight: bold;
   color: #009184;
-}
-  
-.statement, .statement-equal{
+ }
+
+ .statement, .statement-equal{
    cursor: default;
-}
-  
-.statement:hover, .statement-equal:hover{
-  box-shadow: 0 0 25px rgba(33,33,33,.2);
-}
+ }
+
+ .statement:hover, .statement-equal:hover{
+  box-shadow: 0 0 25px rgba(33,33,33,.2); 
+ }
+
 
 /*--------------------------------------------------------------
 # Add a Company (Wen Shan's Code)
@@ -1065,4 +1112,3 @@ textarea {
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
-
