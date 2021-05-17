@@ -176,6 +176,7 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 //----------STACY'S CODE ENDS HERE--------------------
+//----------RAYMOND & WEN SHAN'S CODE STARTS HERE--------------------
  
 // Crowdsourcing Interactive Part (form)
 function statement1() {
@@ -227,6 +228,7 @@ function statement3() {
 }
 
 // crowdsourcing modified radio button javascript
+// current implementation does not use radio buttons
 function statement1Select() {
   var statement1 = document.getElementById("statement1");
   statement1.checked = true;
@@ -238,6 +240,7 @@ function statement2Select() {
 }
 
 // more crowdsourcing javascript functions
+// changes visual of div depending on which box is clicked
 function selectStatementLeft() {
   var statement1 = document.getElementById("s-left");
   var statement2 = document.getElementById("s-right");
@@ -272,7 +275,8 @@ function selectStatementBot() {
 }
  
 
-// function for search functionality
+// functions for search functionality
+// searchCompany hides all nonsubstring searches when clicking the search button
 function searchCompany() {
   var nameCounter = 0;
   var input, filter, ul, li, a, i, txtValue;
@@ -306,6 +310,7 @@ function searchCompany() {
   });
 }
 
+// searchCompanyEnter does the same thing but allows you search by pressing the "enter" key instead of clicking
 function searchCompanyEnter() {
   var nameCounter = 0;
   var input, filter, ul, li, a, i, txtValue;
@@ -333,3 +338,5 @@ function searchCompanyEnter() {
   }
   nameCounter = 0;
 }
+
+//----------RAYMOND & WEN SHAN'S CODE ENDS HERE--------------------
